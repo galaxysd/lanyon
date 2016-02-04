@@ -10,7 +10,7 @@ title:               "Galaxy's World"
 tagline:             '银河雪尘'
 description:         'My Blog. Written by <a href="https://twitter.com/galaxy001" target="_blank">@galaxy001</a>.'
 url:                 https://galaxysd.github.io
-baseurl:             /
+baseurl:             ''
 paginate:            5
 
 # About/contact
