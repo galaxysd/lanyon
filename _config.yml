@@ -1,7 +1,7 @@
 # Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
+#permalink:           pretty
 # https://help.github.com/articles/removing-relative-permalinks
 #relative_permalinks: true
 
@@ -10,7 +10,7 @@ title:               "Galaxy's World"
 tagline:             '银河雪尘'
 description:         'My Blog. Written by <a href="https://twitter.com/galaxy001" target="_blank">@galaxy001</a>.'
 url:                 https://galaxysd.github.io
-baseurl:             ''
+baseurl:             /
 paginate:            5
 
 # About/contact
@@ -21,3 +21,27 @@ author:
 
 # Custom vars
 version:             1.0.0
+
+# added by Galaxy
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+permalink: /:categories/:year:month:day/:title
+markdown: kramdown
+
+kramdown:
+  input: GFM
+
+timezone: Asia/Hong_Kong
+
+# https://help.github.com/articles/using-jekyll-with-pages/#configuring-jekyll
+## Changeable
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+## Constant
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
